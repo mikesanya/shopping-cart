@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta https-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="title" content="website">
+        <meta name="description" content="Orinoco, teddy bears, teddies">
+        <meta name="keywords" content="Orinoco, teddy bears, teddies">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <title>Orinoco teddy bears</title>
+      </head>
+      <!--head ends-->
+      <!--body starts-->
+      <body>
+          <!--wrapper start--> 
+          <wrapper id="wrapper">
+              <div class="container">
+              <section class="header">
+                <div class="navbar">
+                    <logo class="logo">
+                      <a href="index.html"><img src="images/logo-1.jpeg" width="130px" alt="logo"></logo></a>
+                    <!---nav starts-->
+                    <nav>
+                      <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                       
+                        <li><a href="cart.html"> <i class="fas fa-shopping-cart"></i>Cart<span id="numbers">0</span></a></li>
+                        <li><a href="confirmation.html">Confirmation</a></li>       
+                      </ul>
+                    </nav>
+                    <img src ="./images/menu-bar.png" class ="menu-bar" onclick ="menutoggle()">
+                    <!---nav ends-->                                                                                                                                                                                                                               
+                </div>
+              </section>
+              <div class="main-content">
+              <div class="row">
+                <div class="col-2">
+                    <h1>Express Affection in Cutest<br>Way with Adorable Teddies!</h1>
+                    <p>A bedroom without a teddy is like a face without a smile.<br> Happy Teddy Bear Day!</p>
+                    <a href="" class="btn">Explore Now &#8594</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/whitet.jpeg" width="500px"> 
+                </div>  
+              </div>
+              </div>
+              </div>
+              <!---footer starts-->
+          <div class="footer">
+              <h3>Follow us</h3>
+              <strong>Social Media:</strong>
+              <span>
+                <a href="https://twitter.com" target="_blank">
+                  <i class="fab fa-twitter" aria-hidden="true"> </i>
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                  <i class="fab fa-youtube" aria-hidden="true"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                  <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                  <i class="fab fa-instagram-square" aria-hidden="true"></i>
+                </a>
+              </span>
+              <p class="copyright"> copyright 2020</p>
+          </div>
+          <!--footer ends-->
+          </wrapper>
+          <!---wrapper ends-->
+        <!--js for toggle menu-->
+        <script>
+          var MenuItems = document.getElementById("MenuItems");
+
+          MenuItems.style.maxheight = "0px";
+
+          function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+              MenuItems.style.maxHeight = "200px";
+            }
+          else 
+          {
+            MenuItems.style.maxHeight = "0px";
+          }
+          }
+        </script>
+       
+      </body>   
+  </html>

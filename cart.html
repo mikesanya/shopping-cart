@@ -1,0 +1,235 @@
+  <!DOCTYPE html>
+  <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta https-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="title" content="website">
+        <meta name="description" content="Orinoco, teddy bears, teddies">
+      <meta name="keywords" content="Orinoco, teddy bears, teddies">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <title>Orinoco teddy bears</title>
+
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        padding: 1px;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+    
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        margin: 0 -16px;
+      }
+      
+      .col-25 {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+      }
+      
+      .col-50 {
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+      }
+      
+      .col-75 {
+        -ms-flex: 75%; /* IE10 */
+        flex: 75%;
+      }
+      
+      .col-25,
+      .col-50,
+      .col-75 {
+        padding: 0 16px;
+      }
+      
+      .container {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+      }
+      
+      input[type=text] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      
+      label {
+        margin-bottom: 10px;
+        display: block;
+      }
+      
+      .icon-container {
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+      }
+      
+      .btn {
+        background-color: radial-gradient(#fff, #ff6d6d);
+        color: white;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        width: 100%;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 17px;
+      }
+      
+      .btn:hover {
+        background-color: radial-gradient(#fff, #ff6d6d);
+        background: #897;
+        color: #555;
+      }
+      
+      a {
+        color: #555;
+      }
+      
+      hr {
+        border: 1px solid lightgrey;
+      }
+      
+      span.price {
+        float: right;
+        color: grey;
+      }
+      
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+      @media (max-width: 800px) {
+        .row {
+          flex-direction: column-reverse;
+        }
+        .col-25 {
+          margin-bottom: 20px;
+        }
+      }
+      </style>
+      </head>
+      <!--head ends-->
+      <!--body starts-->
+      <body>
+          <!--wrapper starts--> 
+          <wrapper id="wrapper">
+              <section class="header">
+                <div class="navbar">
+                    <logo class="logo">
+                        <a href="index.html"><img src="images/logo-1.jpeg" width="130px" alt="logo"></logo></a>
+                    <!--nav starts-->
+                          <nav>
+                            <ul id="MenuItems">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="products.html">Products</a></li>
+                             
+                              <li><a href="cart.html"> <i class="fas fa-shopping-cart"></i>Cart<span id="numbers">0</span></a></li>
+                              <li><a href="confirmation.html">Confirmation</a></li>       
+                            </ul>
+                          </nav>
+                          <img src ="./images/menu-bar.png" class ="menu-bar" onclick ="menutoggle()">
+                    <!--nav ends-->
+                </div>
+              </section>
+        
+          <div class="main-content">
+            <div class="small-container cart-page">
+              <table>
+                <tr>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr> 
+              <tbody id="cart-products">
+
+              </tbody>
+              </table>   
+              <div class="total-price">
+                <table>
+                  <tr>
+                    <td>Total</td>
+                    <td id="total">$0</td>
+                  </tr>
+                </table>
+              </div> 
+            </div>
+            <a href="" class="btn-purchase">Purchase</a>
+          </div>
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> First Name</label>
+            <input type="text" id="firstName" name="firstname" placeholder="John">
+            <label for="fname"><i class="fa fa-user"></i> Last Name</label>
+            <input type="text" id="lastName" name="lasttname" placeholder="Doe">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="address" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="kent">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+          </div>
+
+        <input type="submit" value="Continue to checkout" id='checkoutButton' class="btn">
+      </form>
+    </div>
+  </div>           
+                  <!----footer starts-->
+                  <div class="footer">
+                      <h3>Follow us</h3>
+                      <strong>Social Media:</strong>
+                  
+                      <span>
+                        <a href="https://twitter.com" target="_blank">
+                          <i class="fab fa-twitter" aria-hidden="true"> </i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank">
+                          <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank">
+                          <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank">
+                          <i class="fab fa-instagram-square" aria-hidden="true"></i>
+                        </a>
+                      </span>
+                      <p class="copyright"> copyright 2020</p>
+                  </div>
+                  <!---footer ends-->
+                  <script>
+                    var MenuItems = document.getElementById("MenuItems");
+            
+                    MenuItems.style.maxheight = "0px";
+            
+                    function menutoggle(){
+                      if(MenuItems.style.maxHeight == "0px")
+                      {
+                        MenuItems.style.maxHeight = "200px";
+                      }
+                    else 
+                    {
+                      MenuItems.style.maxHeight = "0px";
+                    }
+                    }
+                  </script>
+                  <span id="addToCart"></span>
+                  <div id= "products"></div>
+          </wrapper>
+      
+          <!---wrapper ends-->
+          <script src="js/app.js"></script>
+        </body>   
+  </html>
