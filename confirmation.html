@@ -28,9 +28,8 @@
                           <ul id="MenuItems">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="products.html">Products</a></li>
-                          
-                            <li><a href="cart.html"> <i class="fas fa-shopping-cart"></i>Cart<span id="numbers">0</span></a></li>
-                            <li><a href="confirmation.html">Confirmation</a></li>
+                            <li><a href="cart.html"> <i class="fas fa-shopping-cart"></i>Cart&nbsp;&nbsp;
+                              <span id="numbers">0</span></a></li>     
                         </ul>
                     </nav>
                     <img src="./images/menu-bar.png" class="menu-bar" onclick="menutoggle()">
@@ -38,6 +37,7 @@
                 </div>
               </div>
               <div class="main-content">
+                <center><h1>Confirmation</h1></center>
                 <p id='confirmation'></p>
               </div>
               <!---footer starts-->
@@ -87,7 +87,8 @@ let confirmation = document.getElementById('confirmation');
 console.log(response);
 
 
-confirmation.innerHTML = `Your order ID is : ${response.orderId}, the total of your purchase is ${total}`;
+confirmation.innerHTML = `<center><h1> Thank you for your order</h1> <h2>Your order ID is : ${response.orderId}</h2>, <h3> the total of your purchase is ${total}</h3></center>`;
+
         </script>
         </body>   
   </html>

@@ -26,8 +26,7 @@
     .navbar {
         display: flex;
         align-items: center;
-        padding: 20px;
-        
+        padding: 30px;
     }
     nav {
         flex: 1;
@@ -37,11 +36,15 @@
         display: inline-block;
         list-style-type: none;
         margin-top: -12px;
+        margin-right: 20px;
+        padding-top: 3px;
     }
     nav ul li {
         display: inline-block;
         margin-right: 20px;
         padding-right: 20px;
+        padding-bottom: 4px;
+        padding-top: 3px;
     }
 
     a{
@@ -256,7 +259,7 @@
     /*-----cart items---*/
 
     .cart-page{
-        margin: 80px auto;
+        margin: 60px auto;
     }
     table{
         width: 100%;
